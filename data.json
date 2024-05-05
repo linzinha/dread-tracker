@@ -1,0 +1,229 @@
+{
+  "zones": [
+    "Cabin",
+    "Tallest Tree",
+    "Burrows",
+    "Village Square",
+    "Skid Row",
+    "Old Duke's Estate",
+    "Tower",
+    "Great Hall",
+    "Dungeons"
+  ],
+  "bosses": {
+    "Forest": ["Falls-From-Sky", "Great Wolf of the Air"],
+    "Village": ["Mayor Ghost", "Zombie Homeowners' Association"],
+    "Castle": ["The Unkillable Skeleton", "Count Drunkula"]
+  },
+  "boss item map": {
+    "Falls-From-Sky": "bloody kiwitini",
+    "Great Wolf of the Air": "",
+    "Mayor Ghost": "Dreadsylvania Auditor's badge",
+    "Zombie Homeowners' Association": "",
+    "The Unkillable Skeleton": "Dreadsylvanian shepherd's pie",
+    "Count Drunkula": ""
+  },
+  "boss items": {
+    "bloody kiwitini": [
+      "blood kiwi",
+      "eau de mort"
+    ],
+    "Dreadsylvania Auditor's badge": [
+      "wax banana",
+      "intricate music box parts",
+      "complicated lock impression",
+      "replica key"
+    ],
+    "Dreadsylvanian shepherd's pie": [
+      "dread tarragon",
+      "bone flour",
+      "stinking agaricus",
+      "dreadful roast"
+    ]
+  },
+  "components": {
+    "bloody kiwitini": {
+      "class requirement": "Moxie",
+      "location": "Tower"
+    },
+    "Dreadsylvania Auditor's badge": {
+      "class requirement": "None",
+      "location": "Cabin"
+    },
+    "Dreadsylvanian shepherd's pie": {
+      "class requirement": "Myst",
+      "location": "Old Duke's Estate"
+    },
+    "blood kiwi": {
+      "class requirement": "Muscle",
+      "quantity": 1,
+      "players": 2,
+      "location": "Tallest Tree",
+      "prereqs": "None"
+    },
+    "eau de mort": {
+      "class requirement": "None",
+      "quantity": 99,
+      "players": 1,
+      "location": "Old Duke's Estate",
+      "prereqs": "None"
+    },
+    "replica key": {
+      "class requirement": "Moxie",
+      "quantity": 99,
+      "players": 1,
+      "location": "Skid Row",
+      "prereqs": ["complicated lock impression", "intricate music box parts"]
+    },
+    "complicated lock impression": {
+      "class requirement": "None",
+      "quantity": 99,
+      "players": 1,
+      "location": "Cabin",
+      "prereqs": "wax banana"
+    },
+    "intricate music box parts": {
+      "class requirement": "Accordion Thief",
+      "quantity": 1,
+      "players": 1,
+      "location": "Cabin",
+      "prereqs": "None"
+    },
+    "wax banana": {
+      "class requirement": "Myst",
+      "quantity": 1,
+      "players": 1,
+      "location": "Great Hall",
+      "prereqs": "None"
+    },
+    "dread tarragon": {
+      "class requirement": "None",
+      "quantity": 99,
+      "players": 1,
+      "location": "Cabin",
+      "prereqs": "None"
+    },
+    "bone flour": {
+      "class requirement": "Muscle",
+      "quantity": 99,
+      "players": 1,
+      "location": "Cabin",
+      "prereqs": "old dry bone"
+    },
+    "stinking agaricus": {
+      "class requirement": "None",
+      "quantity": 1,
+      "players": 1,
+      "location": "Dungeons",
+      "prereqs": "None"
+    },
+    "dreadful roast": {
+      "class requirement": "None",
+      "quantity": 1,
+      "players": 1,
+      "location": "Great Hall",
+      "prereqs": "None"
+    }
+  },
+  "boss banishes": {
+    "Falls-From-Sky": {
+      "banish": "werewolves",
+      "location": ["Cabin", "Old Duke's Estate"],
+      "choice sequence": ["Cabin -> Attic -> Wolfsbane", "Old Dukes' Estate -> Master suite(locked) -> Blow whistle"]
+    },
+    "Mayor Ghost": {
+      "banish": "zombies",
+      "location": [
+        "Tower",
+        "Old Duke's Estate"
+      ],
+      "choice sequence": [
+        "Tower -> Laboratory(locked) -> Examine brains",
+        "Old Dukes' Estate -> Family plot -> Close gates"
+      ]
+    },
+    "The Unkillable Skeleton": {
+      "banish": "vampire",
+      "location": [
+        "Cabin",
+        "Great Hall"
+      ],
+      "choice sequence": [
+        "Cabin -> Attic -> Rafters",
+        "Great Hall -> Ballroom(locked) -> Play organ"
+      ]
+    }
+  },
+  "six kiss banishes": {
+    "cold": {
+      "location": ["Burrows", "Great Hall"],
+      "choice sequence": ["Burrows -> Towards cold -> Read", "Great Hall -> Kitchen -> Turn down freezer"]
+    },
+    "stench": {
+      "location": ["Cabin", "Skid Row", "Great Hall"],
+      "choice sequence": ["Cabin -> Kitchen -> Disposal", "Skid Row - Sewers -> Unclog", "Great Hall -> Dining room -> Clear dishes"]
+    },
+    "spooky": {
+      "location": ["Cabin", "Village Square", "Dungeons"],
+      "choice sequence": ["Cabin -> Attic(locked) -> Music Box", "Village Square -> Gallows -> Paint the noose", "Dungeons -> Cell Block -> Flush"]
+    },
+    "sleaze": {
+      "location": ["Tallest Tree", "Tower", "Skid Row"],
+      "choice sequence": ["Tallest Tree -> Climb to the Top -> Kick", "Tower -> Bedroom -> Parrot", "Skid Row -> Tenements -> Paint"]
+    },
+    "hot": {
+      "location": ["Dungeons"],
+      "choice sequence": ["Dungeons -> Boiler room -> Let of steam"]
+    }
+  },
+  "boss strategy": {
+    "Falls-From-Sky": {
+      "gear": ["Amulet of Perpetual Darkness"],
+      "items": ["mercenary pistol"],
+      "skills": ["None"],
+      "description": "low ML, use special ammo"
+    },
+    "Mayor Ghost": {
+      "gear": [
+        "Choker of the Ultragoth",
+        "clown wig",
+        "giant gym membership card",
+        "leotarrrd",
+        "oven mitts",
+        "plush hamsterpus",
+        "spork",
+        "white snakeskin duster"],
+      "items": [
+        "poltergeist-in-the-jar-o",
+        "brick of sand",
+        "sparking El Vibrato drone",
+        "blue plastic oyster egg",
+        "hot clusterbomb",
+        "tequila grenade",
+        "sharpened hubcap",
+        "fetid feather",
+        "onion shurikens",
+        "stone frisbee"
+      ],
+      "skills": [
+        "Inappropriate Backrub",
+        "Chronic Indigestion",
+        "Snowclone",
+        "Spooky Breath",
+        "Tango of Terror",
+        "Stream of Sauce",
+        "Sing",
+        "Disco Dance of Doom",
+        "Ravioli Shurikens",
+        "Spectral Snapper",
+        "Harpoon!"],
+      "description": "know all the skills, have all the items"
+    },
+    "The Unkillable Skeleton": {
+      "items": ["short beer", "short white"],
+      "skills": ["None"],
+      "description": "Use a mosquito-type familiar, increase familiar activity and damage"
+    }
+  }
+}
+
